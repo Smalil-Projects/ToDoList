@@ -162,9 +162,8 @@
       },
     ];
     function getTasksFromStorage (){
-
-      
-      tasks = JSON.parse(localStorage.getItem("tasks"));
+      let  reiterable = JSON.parse(localStorage.getItem("tasks"));
+      tasks = reiterable ?? []
     }
     getTasksFromStorage ()
 
